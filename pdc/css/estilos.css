@@ -1,0 +1,89 @@
+img{
+    width: 100px;
+    
+}
+img:hover{
+    outline: 1px solid blue;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    transform: scaleX(-1);
+    margin-left: 20px;
+}
+.imgs{
+    position: relative;
+}
+.imgs::after{
+    content: 'Registro';
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-size: 25px;
+    width: 100px;
+    height: 70px;
+    opacity: 0;
+    color: rgb(84, 192, 235);
+}
+.imgs:hover::after{
+    opacity: 0.5;
+    background: rgb(51, 51, 51);
+    outline: 1px solid blue;
+    cursor: pointer;
+}
+
+.imgr{
+    position: relative;
+}
+.imgr::after{
+    content: 'Consulta';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 25px;
+    width: 100px;
+    height: 70px;
+    opacity: 0;
+    color: rgb(84, 192, 235);
+}
+.imgr:hover::after{
+    opacity: 0.5;
+    background: rgb(51, 51, 51);
+    outline: 1px solid blue;
+    cursor: pointer;
+}
+
+.imgz{
+    position: relative;
+}
+.imgz::after{
+    content: 'Listado';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 25px;
+    width: 100px;
+    height: 70px;
+    opacity: 0;
+    color: rgb(84, 192, 235);
+}
+.imgz:hover::after{
+    opacity: 0.5;
+    background: rgb(51, 51, 51);
+    outline: 1px solid blue;
+    cursor: pointer;
+}
+
+.imgd{
+    margin-right: 20px;
+}
+.imgc{
+    margin-right: 20px;
+}
+
+#form{
+    display: none;
+}

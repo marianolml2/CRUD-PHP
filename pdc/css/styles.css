@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right top, #3d801e, #2d7e30, #1c7b3f, #0b784a, #007454, #00715b, #006d60, #006963, #006465, #005f67, #005a67, #005566);
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    
+    animation: sombra infinite 2s; ;
+}
+@keyframes sombra {
+    0%{
+         text-shadow: 0 0 4px #fff;
+        }
+    40%{
+        text-shadow: 0 0 8px #fff;
+    }
+    60%{
+        text-shadow: 0 0 12px #fff;
+    }
+    }
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin: 60px auto;
+    border: 2px solid #222;
+    padding: 60px;
+    font-size: 20px;
+    background: #4ba548;
+    border-radius: 3px;
+}
+#informe{
+    display: flex;
+    justify-content: space-between;
+}
+#informeE{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    padding: 6px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover{
+    background-color: #8acc87;
+    cursor: pointer;
+}
